@@ -1,0 +1,136 @@
+:root{
+    --color-primary: #00f5ff;
+    --color-secondery: #1a0033;
+    --color-success: #ff00ff;
+    --primary-font:'Poppins', sans-serif;
+    --secondary-font:'Playfair Display', serif
+}
+
+
+  /* For contrast, pair Poppins (sans-serif) for body text with Playfair Display (serif) for headings.
+
+For a bold look, use the Cyberpunk Neon palette with a dark background. */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 1rem;
+    background: var(--color-secondery);
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    border: 2px solid gray;
+    box-shadow: 1px 1px 1px rgb(0, 0, 0.5);
+}
+
+.logo{
+    background: url("./asset/image_fx.jpg");
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 2rem;
+    transition: all 0.3s;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.nav a{
+    margin: 20px;
+    text-decoration: none;
+    color: var(--color-primary);
+    font-size: 1rem;
+    padding: 5px;
+    font-family: var(--secondary-font);
+}
+
+.nav a:hover{
+    border-bottom: 2px solid var(--color-primary);
+}
+.nav-links{
+    margin-right: 5rem;
+}
+
+.main-content{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 2px solid gray;
+    box-shadow: 1px 1px 1px rgb(0, 0, 0.5);
+    margin-top: 2rem;
+    color: var(--color-primary);
+}
+
+.main-content h1{
+    font-family: var(--primary-font);
+    font-size: 3rem;
+    text-align: center;
+
+}
+
+.color{
+    color: var(--color-success);
+}
+
+.main-content p{
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+.btn{
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: var(--color-success);
+    font-size: 1rem;
+    background-color:transparent;
+    border: 2px solid var(--color-success);
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.btn:hover{
+    background: var(--color-success);
+    color: white;
+}
+
+
+.quotes-container{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-primary);
+}
+
+.quote{
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid gray;
+    font-family: var(--primary-font);
+}
+
+.q{
+    margin: 10px;
+}
+
+.quote span{
+    color: var(--color-success);
+}
