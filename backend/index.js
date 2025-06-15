@@ -14,6 +14,7 @@ const PORT = process.env.PORT || 8000;
 
 app.use(cors());
 app.use(express.json());
+app.use(express.static("frontend"))
 
 app.get('/quote', async(req,res)=>{
     try {
@@ -27,6 +28,8 @@ app.get('/quote', async(req,res)=>{
     }
 });
 
+// if i include this code, it will add quotes to the database
+// and the fronend will be able to access it
 
 // app.post('/quote', async(req,res)=>{
 //     try {
